@@ -95,7 +95,7 @@ function starting(){
                 jokercan=jokercan.filter((e)=>e!==n-rows+1);
                 jokercan=jokercan.filter((e)=>e!==n-rows-1);
                 canusenum=canusenum.filter((e)=>e!==n);
-                leftjoker-=1
+                leftjoker-=1;
                 if (jokercan.length===0&&leftjoker>0){
                     starting();
                     return;
@@ -178,4 +178,4 @@ if (localStorage.getItem('btncolor')===null){
     jokerinfo.style.backgroundColor=localStorage.getItem('btncolor');
     exceptinfo.style.backgroundColor=localStorage.getItem('btncolor');
     startbtn.style.backgroundColor=localStorage.getItem('btncolor');
-}
+};
