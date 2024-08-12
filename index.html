@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seat Maker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="자리배치기.png">
+</head>
+<body>
+    <h1>자리 배치기</h1>
+    <h2>인원 수와 가로 줄 수를 입력하고 시작 버튼을 눌러 자리를 배치하시오.</h2>
+    <input style="font-size: 3vw; width: 15vw; border: none; border-radius: 0.5vw;" id="peopleinputer" type="number" placeholder="끝 번호">
+    <input style="font-size: 3vw; width: 15vw; border: none; border-radius: 0.5vw;" id="rowsinputer" type="number" placeholder="가로 줄 수">
+    <button style="font-size: 3vw; border: none; border-radius: 0.5vw; background-color: cornflowerblue; cursor: pointer; color: white;" id="startbtn">배치하기</button>
+    <div>
+        <div style="display: inline-block;">
+            <span style="font-size: 2vw;">조커 번호:</span>
+            <input style="font-size: 2vw; width: 50vw; border: none; border-radius: 0.5vw;" id="jokerinputer" type="text" placeholder="조커의 번호를 ,로 구분해서 입력하시오.">
+            <button style="font-size: 1.9vw; background-color: cornflowerblue; color: white; border: none; border-radius: 0.5vw; width: 15vw; cursor: pointer;" id="jokerinfo">조커 번호란?</button>
+        </div>
+        <div style="display: inline-block;">
+            <span style="font-size: 2vw;">제외 번호:</span>
+            <input style="font-size: 2vw; width: 50vw; border: none; border-radius: 0.5vw;" id="exceptinputer" type="text" placeholder="제외할 번호를 ,로 구분해서 입력하시오.">
+            <button style="font-size: 1.9vw; background-color: cornflowerblue; color: white; border: none; border-radius: 0.5vw; width: 15vw; cursor: pointer;" id="exceptinfo">제외 번호란?</button>
+        </div>
+    </div>
+    <div>
+        <span id="displayer" style="font-size: 3vw;"></span>
+    </div>
+    <div style="display: inline-block;">
+        <span style="font-size: 1.2vw;">배경 색깔:</span>
+        <button value="#008080" style="background-color: teal;" class="backcolor">틸</button>
+        <button value="#900020" style="background-color: #66061A;" class="backcolor">버건디</button>
+        <button value="#041E42" style="background-color: #041E42;" class="backcolor">네이비</button>
+        <button value="#6CACE4" style="background-color: #6CACE4;" class="backcolor">블루</button>
+        <button value="#F37321" style="background-color: #F37321;" class="backcolor">오렌지</button>
+        <button value="#4AC7D5" style="background-color: #4AC7D5;" class="backcolor">민트</button>
+        <button value="#C7A079" style="background-color: #C7A079;" class="backcolor">골드</button>
+        <span style="font-size: 1.2vw; margin-left: 2vw;">글자 색깔:</span>
+        <button value="#000000" style="background-color: black;" class="ltcolor">블랙</button>
+        <button value="#FFFFFF" style="background-color: #FFF; color: black;" class="ltcolor">화이트</button>
+        <span style="font-size: 1.2vw; margin-left: 2vw;">버튼 색깔:</span>
+        <button value="#6495ED" style="background-color: cornflowerblue; color: white;" class="btncolor">청국화</button>
+        <button value="#DC143C" style="background-color: crimson; color: white;" class="btncolor">크림슨</button>
+    </div>
+    <h3 style="font-size: 2.5vw;">오 롯데의 황성빈~ 오오오~ 안타 안타 롯데 황성빈~</h3>
+    <h4 style="font-size: 1vw; color: antiquewhite;">과도하게 많은 조커 학생들을 설정하는 것은<br>자리 배치가 불가할뿐더러 컴퓨터에 무리를 줄 수 있습니다.</h4>
+    <script src="app.js"></script>
+</body>
+</html>
