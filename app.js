@@ -144,7 +144,7 @@ function backgroundcolorchange(evt){
 };
 function lettercolorchange(evt){
     document.body.style.color=evt.target.value;
-    ltselect.forEach(e=>e.style.borderColor='#FFF')
+    ltselect.forEach(e=>e.style.borderColor='#FFF');
     evt.target.style.borderColor='cornflowerblue';
     localStorage.setItem('ltcolor',evt.target.value);
 };
