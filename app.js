@@ -178,4 +178,4 @@ if (localStorage.getItem('btncolor')===null){
     jokerinfo.style.backgroundColor=localStorage.getItem('btncolor');
     exceptinfo.style.backgroundColor=localStorage.getItem('btncolor');
     startbtn.style.backgroundColor=localStorage.getItem('btncolor');
-};
+}
